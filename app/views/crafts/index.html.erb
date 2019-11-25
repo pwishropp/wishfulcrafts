@@ -1,1 +1,8 @@
-<h1>Welcome to my Awesome Craft App</h1>
+<% @crafts.each do |craft| %>
+  <div>
+    <h1><%= craft.name %></h1><br />
+    <p><%= craft.description %></p><br />
+  </div>
+
+  <hr />
+  <% end %>
