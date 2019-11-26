@@ -13,6 +13,10 @@ class CraftsController < ApplicationController
     redirect_to root_path
   end
 
+  def show
+    @craft = Craft.find(params[:id])
+  end
+
 
   private
 
