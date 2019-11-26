@@ -2,6 +2,9 @@
 <%= simple_form_for @craft do |f| %>
   <%= f.input :name %>
   <%= f.input :description %>
+  <%= f.input :cost %>
+  <%= f.input :option %>
+  <%= f.input :quantity %>
   <br />
   <%= f.submit 'Create', class: 'btn btn-primary' %>
 <% end %>

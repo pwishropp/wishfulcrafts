@@ -1,12 +1,13 @@
 <div class="booyah-box col-12 offset-1">
+
+
 <h1>Featured Crafts</h1>
 <br />
   <div class="row">
     <% @crafts.each do |craft| %>
       <div class="booyah-box">
       <div class="col-12 col-sm-4">
-        <h2><%= craft.name %></h2>
-        <p><%= craft.description %></p><br />
+        <h2><%= link_to craft.name, craft_path(craft) %></h2>
       </div>
       </div>
     <% end %>
