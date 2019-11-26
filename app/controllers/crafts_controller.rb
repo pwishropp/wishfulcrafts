@@ -27,6 +27,11 @@ class CraftsController < ApplicationController
     redirect_to root_path
   end
 
+  def destroy
+    @craft = Craft.find(params[:id])
+    @craft.destroy
+    redirect_to root_path
+  end
 
   private
 
@@ -34,3 +39,5 @@ class CraftsController < ApplicationController
     params.require(:craft).permit(:name, :description, :quantity, :option, :cost)
   end
 end
+
+

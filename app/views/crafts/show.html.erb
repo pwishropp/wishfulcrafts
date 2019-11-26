@@ -6,5 +6,6 @@
   <p><%= @craft.quantity %></p>
   <div class="float-right">
     <%= link_to 'Edit', edit_craft_path(@craft), class: 'btn btn-primary' %>
+    <%= link_to 'Delete', craft_path(@craft), class: 'btn btn-danger' %>
   </div>
 </div>
