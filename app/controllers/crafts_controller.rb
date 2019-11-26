@@ -17,6 +17,16 @@ class CraftsController < ApplicationController
     @craft = Craft.find(params[:id])
   end
 
+  def edit
+    @craft = Craft.find(params[:id])
+  end
+
+  def update
+    @craft = Craft.find(params[:id])
+    @craft.update_attributes(craft_params)
+    redirect_to root_path
+  end
+
 
   private
 

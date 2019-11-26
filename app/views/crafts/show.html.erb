@@ -4,4 +4,7 @@
   <i><%= @craft.option %></i>
   <p><%= @craft.cost %></p>
   <p><%= @craft.quantity %></p>
+  <div class="float-right">
+    <%= link_to 'Edit', edit_craft_path(@craft), class: 'btn btn-primary' %>
+  </div>
 </div>
