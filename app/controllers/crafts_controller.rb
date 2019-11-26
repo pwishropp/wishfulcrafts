@@ -33,6 +33,10 @@ class CraftsController < ApplicationController
     redirect_to root_path
   end
 
+  def shop
+    @crafts = Craft.all
+  end
+
   private
 
   def craft_params
