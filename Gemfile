@@ -60,3 +60,4 @@ end
 gem 'simple_form'
 gem 'jquery-rails'
 gem 'bootstrap', '~>4.3.1'
+gem "mini_magick"

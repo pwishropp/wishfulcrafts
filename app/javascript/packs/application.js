@@ -15,4 +15,9 @@ require("channels")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
-@import '~bootstrap/scss/bootstrap';
+import 'jquery'
+ import 'bootstrap' 
+// import '../stylesheets/application' 
+// import 'bootstrap-confirmation2/dist/bootstrap-confirmation'  
+// import "controllers" 
+// import 'src'

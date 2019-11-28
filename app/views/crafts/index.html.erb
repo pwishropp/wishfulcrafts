@@ -6,9 +6,7 @@
   <div class="row">
     <% @crafts.each do |craft| %>
       <div class="booyah-box">
-      <div class="col-10 col-sm-4">
         <h2><%= link_to craft.name, craft_path(craft) %></h2>
-      </div>
       </div>
     <% end %>
   </div> 
@@ -16,3 +14,4 @@
 
 <h1>Coming Soon</h1>
 </div>
+

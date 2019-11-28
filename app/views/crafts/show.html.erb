@@ -4,8 +4,10 @@
   <i><%= @craft.option %></i>
   <p><%= @craft.cost %></p>
   <p><%= @craft.quantity %></p>
+  <%= image_tag(@craft.thumbnail) %>
+
   <div class="float-right">
     <%= link_to 'Edit', edit_craft_path(@craft), class: 'btn btn-primary' %>
-    <%= link_to 'Delete', craft_path(@craft), class: 'btn btn-danger' %>
+    <%= link_to 'Delete', craft_path(@craft), remote: true, method: :delete, class: 'btn btn-danger', data: { confirm: 'Are you sure?' } %>
   </div>
 </div>

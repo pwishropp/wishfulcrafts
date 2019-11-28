@@ -32,7 +32,6 @@ class CraftsController < ApplicationController
     @craft.destroy
     redirect_to root_path
   end
-
   def shop
     @crafts = Craft.all
   end
@@ -40,7 +39,7 @@ class CraftsController < ApplicationController
   private
 
   def craft_params
-    params.require(:craft).permit(:name, :description, :quantity, :option, :cost)
+    params.require(:craft).permit(:name, :description, :quantity, :option, :cost, :image)
   end
 end
 
