@@ -8,6 +8,9 @@
     <% @crafts.each do |craft| %>
       <div class="booyah-box">
         <h2><%= link_to craft.name, craft_path(craft) %></h2>
+        <p><%= craft.cost %></p>
+        <%= image_tag(craft.thumbnail) %>
+
       </div>
     <% end %>
   </div> 
