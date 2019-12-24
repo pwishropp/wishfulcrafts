@@ -1,12 +1,9 @@
-<div class="booyah-box col-10 offset-1">
-
-
-<h1>Shop All</h1>
+<h1>Shop Now</h1>
 <br />
 
   <div class="row">
     <% @crafts.each do |craft| %>
-      <div class="booyah-box">
+      <div class="col-3">
         <h2><%= link_to craft.name, craft_path(craft) %></h2>
         <p><%= craft.cost %></p>
         <%= image_tag(craft.thumbnail) %>
@@ -14,11 +11,3 @@
       </div>
     <% end %>
   </div> 
-</div>
-
-
-
-
-<br />
-<br />
-
